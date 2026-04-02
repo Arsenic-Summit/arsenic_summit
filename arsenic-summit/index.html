@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Arsenic Summit 2026 — Where Diplomacy Meets Democracy. A premium, high-pressure conference built for ambitious young leaders." />
-  <title>Arsenic Summit — Where Diplomacy Meets Democracy</title>
+  <meta name="description" content="Arsenic Summit 2026 - Where Diplomacy Meets Democracy. A premium, high-pressure conference built for ambitious young leaders." />
+  <title>Arsenic Summit - Where Diplomacy Meets Democracy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <!-- Favicon-ready (inline SVG; replace anytime without breaking paths) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d10'/%3E%3Cpath d='M20 40c7-15 17-21 24-24-2 7-9 17-24 24Z' fill='%232f6f5e'/%3E%3Cpath d='M24 46c12-2 21-9 26-20-10 6-18 14-26 20Z' fill='%23b08d57' opacity='.9'/%3E%3C/svg%3E" />
 </head>
-<body>
+<body data-enable-intro>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- 1. Announcement bar -->
@@ -73,7 +73,7 @@
             <span class="slogan">2026 Edition</span>
           </span>
         </a>
-        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">✕</button>
+        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">X</button>
       </div>
 
       <div class="mobile-nav" aria-label="Mobile navigation">
@@ -113,44 +113,44 @@
             <div class="hero-brand">
               <img class="hero-logo" src="assets/images/arsenic-logo.jpg" alt="Arsenic Summit logo" />
               <div class="label">
-                <span class="eyebrow"><span class="rule" aria-hidden="true"></span>[UPDATE: Edition label]</span>
+                <span class="eyebrow"><span class="rule" aria-hidden="true"></span><span data-bind-text="brand.editionLabel">Founding Edition</span></span>
                 <span class="edition">ARSENIC//SUMMIT</span>
               </div>
             </div>
-            <h1>Where Diplomacy Meets Democracy</h1>
-            <p class="lead sub">Three days of high-pressure committees, strategic debate, crisis simulation, and youth leadership.</p>
+            <h1 data-bind-text="home.heroTitle">Where diplomacy, pressure, and youth leadership meet.</h1>
+            <p class="lead sub" data-bind-text="home.heroLead">Arsenic Summit is built for delegates who want more than attendance. It is a sharper conference experience designed around serious committees, strategic writing, and rooms that reward preparation.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="registration.html">Register Now</a>
               <a class="btn btn-ghost" href="committees.html">Explore Committees</a>
             </div>
             <div class="ruleline"></div>
-            <p class="muted">Arsenic Summit is built for ambitious delegates who want pressure, negotiation, and visibility — delivered with institutional discipline and editorial clarity.</p>
+            <p class="muted" data-bind-text="home.heroNote">We publish like an institution, run like a live newsroom, and expect delegates to show up ready to think, negotiate, and deliver.</p>
           </div>
 
           <aside class="hero-meta reveal" aria-label="Summit essentials">
             <div class="meta-head">
               <div class="status">
-                <span class="badge good">Registration: [UPDATE: Open / Closed]</span>
-                <span class="badge warn">EB: Revealing</span>
+                <span class="badge good">Registration: <span data-bind-text="summit.registrationStatus">Applications Open</span></span>
+                <span class="badge warn" data-bind-text="summit.executiveBoardStatus">Executive board reveal in progress</span>
               </div>
-              <span class="badge">Edition [UPDATE: 2026]</span>
+              <span class="badge">Edition <span data-bind-text="summit.year">2026</span></span>
             </div>
             <div class="meta-grid">
               <div class="meta-item">
                 <div class="k">Dates</div>
-                <div class="v">[UPDATE: Event dates]<small>Example: 14–16 August 2026</small></div>
+                <div class="v" data-bind-text="summit.dates">Dates announced soon</div>
               </div>
               <div class="meta-item">
                 <div class="k">City</div>
-                <div class="v">[UPDATE: City]<small>Example: New Delhi, India</small></div>
+                <div class="v" data-bind-text="summit.city">India</div>
               </div>
               <div class="meta-item">
                 <div class="k">Venue</div>
-                <div class="v">[UPDATE: Venue]<small>Example: Host Campus Auditorium</small></div>
+                <div class="v" data-bind-text="summit.venue">Venue reveal in progress</div>
               </div>
               <div class="meta-item">
                 <div class="k">Host Institution</div>
-                <div class="v">[UPDATE: Host institution]<small>Example: Host Institution Name</small></div>
+                <div class="v" data-bind-text="summit.hostInstitution">Host institution announcement soon</div>
               </div>
             </div>
           </aside>
@@ -162,12 +162,12 @@
     <section class="facts" aria-label="Summit facts">
       <div class="container">
         <div class="facts-row reveal">
-          <div class="fact"><div class="k">Edition</div><div class="v">[UPDATE: Edition]</div></div>
-          <div class="fact"><div class="k">Duration</div><div class="v">[UPDATE: Duration]</div></div>
-          <div class="fact"><div class="k">Committee Count</div><div class="v">[UPDATE: Committee count]</div></div>
-          <div class="fact"><div class="k">Registration</div><div class="v">[UPDATE: Status]</div></div>
-          <div class="fact"><div class="k">EB Reveals</div><div class="v">[UPDATE: Live / Soon]</div></div>
-          <div class="fact"><div class="k">City</div><div class="v">[UPDATE: City]</div></div>
+          <div class="fact"><div class="k">Edition</div><div class="v" data-bind-text="brand.editionLabel">Founding Edition</div></div>
+          <div class="fact"><div class="k">Duration</div><div class="v" data-bind-text="summit.duration">3 conference days</div></div>
+          <div class="fact"><div class="k">Committee Count</div><div class="v" data-bind-text="summit.committeeCountLabel">6 flagship rooms</div></div>
+          <div class="fact"><div class="k">Registration</div><div class="v" data-bind-text="summit.registrationStatus">Applications Open</div></div>
+          <div class="fact"><div class="k">EB Reveals</div><div class="v" data-bind-text="summit.executiveBoardStatus">Executive board reveal in progress</div></div>
+          <div class="fact"><div class="k">City</div><div class="v" data-bind-text="summit.city">India</div></div>
         </div>
       </div>
     </section>
@@ -179,18 +179,14 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Identity</div>
             <h2>What is Arsenic Summit?</h2>
-            <p class="lead">
-              Arsenic Summit is an institutional, premium Model United Nations experience engineered for outcomes — not noise.
-              We build rooms where research matters, negotiation is the currency, and visibility is earned through discipline.
-              Delegates enter a sharper arena of diplomacy: pressure, persuasion, and leadership that survives scrutiny.
-            </p>
+            <p class="lead" data-bind-text="home.identityLead">Arsenic Summit is a premium Model United Nations platform for delegates who care about substance, structure, and credibility. We favor clarity over chaos, policy over theatrics, and outcomes over empty volume.</p>
           </div>
           <div class="grid grid-3">
             <article class="card reveal">
               <div class="card-inner">
                 <div class="card-kicker">Pillar</div>
                 <h3 class="card-title">Diplomacy</h3>
-                <p>Strategic language, institutional realism, and coalition craft — delivered with restraint.</p>
+                <p>Strategic language, institutional realism, and coalition craft - delivered with restraint.</p>
               </div>
             </article>
             <article class="card reveal">
@@ -204,7 +200,7 @@
               <div class="card-inner">
                 <div class="card-kicker">Pillar</div>
                 <h3 class="card-title">Negotiation</h3>
-                <p>Drafting, concessions, leverage — and outcomes that can be defended line by line.</p>
+                <p>Drafting, concessions, leverage - and outcomes that can be defended line by line.</p>
               </div>
             </article>
           </div>
@@ -219,7 +215,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Standard</div>
             <h2>Why Arsenic Stands Apart</h2>
-            <p class="lead">We run a summit that reads like an institution: disciplined communication, serious rooms, and delegate visibility that is earned, not manufactured.</p>
+            <p class="lead" data-bind-text="home.differenceLead">Every page, committee, and process is designed to feel intentional. The goal is not just a good event. The goal is a conference people trust.</p>
           </div>
           <div class="grid grid-2">
             <article class="card reveal"><div class="card-inner"><h3 class="card-title">Serious committees</h3><p>Clear agendas, real pressure, and rules that prioritize outcomes over performance.</p></div></article>
@@ -238,7 +234,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Committees</div>
             <h2>Featured committees</h2>
-            <p class="lead">Choose your arena. Each room has a mood, a standard, and a cost. The right committee doesn’t flatter — it sharpens.</p>
+            <p class="lead" data-bind-text="home.committeesLead">Choose a room that fits your style. Each committee has its own pace, pressure, and political texture.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="committees.html">View all committees</a>
               <a class="btn btn-ghost" href="resources.html">Preparation resources</a>
@@ -256,7 +252,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Trust</div>
             <h2>Secretariat built for standards</h2>
-            <p class="lead">A summit is not just rooms. It’s the discipline behind them: timelines, fairness, clarity, and the courage to hold standards.</p>
+            <p class="lead" data-bind-text="home.secretariatLead">A strong secretariat shapes the delegate experience long before the opening ceremony. We emphasize fairness, response speed, and disciplined communication.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-ghost" href="secretariat.html">Meet the Secretariat</a>
               <a class="btn btn-primary" href="registration.html">Register</a>
@@ -273,18 +269,18 @@
         <div class="reveal">
           <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Journey</div>
           <h2>Delegate experience</h2>
-          <p class="lead">A disciplined timeline from application to outcomes — designed to reduce confusion and increase preparedness.</p>
+          <p class="lead">A disciplined timeline from application to outcomes - designed to reduce confusion and increase preparedness.</p>
         </div>
         <div class="timeline reveal" aria-label="Delegate experience timeline">
           <div class="timeline-line" aria-hidden="true"></div>
           <div class="timeline-steps">
             <div class="step"><div class="n">01</div><div class="t">Application</div><p>Submit a serious application. Clarity beats charisma.</p></div>
             <div class="step"><div class="n">02</div><div class="t">Allotment</div><p>Preference-fit assessment. Fairness, balance, readiness.</p></div>
-            <div class="step"><div class="n">03</div><div class="t">Preparation</div><p>Guides, ROP, and writing standards — no guessing games.</p></div>
-            <div class="step"><div class="n">04</div><div class="t">Arrival</div><p>Verified entry, kits, orientation — clean logistics.</p></div>
+            <div class="step"><div class="n">03</div><div class="t">Preparation</div><p>Guides, ROP, and writing standards - no guessing games.</p></div>
+            <div class="step"><div class="n">04</div><div class="t">Arrival</div><p>Verified entry, kits, orientation - clean logistics.</p></div>
             <div class="step"><div class="n">05</div><div class="t">Immersion</div><p>Committees where outcomes matter. Pressure is the point.</p></div>
             <div class="step"><div class="n">06</div><div class="t">Networking</div><p>Structured socials and editorial visibility through IP.</p></div>
-            <div class="step"><div class="n">07</div><div class="t">Closing</div><p>Awards, outcomes, and documentation — delivered with restraint.</p></div>
+            <div class="step"><div class="n">07</div><div class="t">Closing</div><p>Awards, outcomes, and documentation - delivered with restraint.</p></div>
           </div>
         </div>
       </div>
@@ -297,7 +293,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Clarity</div>
             <h2>Agenda, published like an institution</h2>
-            <p class="lead">Schedules are not decoration. We treat time as credibility: clear windows, clean handoffs, and outcomes.</p>
+            <p class="lead" data-bind-text="home.agendaLead">Clear schedules reduce confusion and improve delegate readiness. We treat timing as part of the experience, not an afterthought.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="agenda.html">View full agenda</a>
               <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -315,7 +311,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Venue</div>
             <h2>Venue & host institution</h2>
-            <p class="lead">The physical space sets the standard. Arsenic Summit runs in a controlled venue designed for focus, security, and professional flow.</p>
+            <p class="lead" data-bind-text="home.venueLead">A summit earns credibility through the quality of its rooms, its operations, and the confidence people feel on arrival.</p>
             <div class="callout mt-18">
               <div class="title">Update-ready placeholders</div>
               <p style="margin:10px 0 0 0;">Replace the venue name, city line, and host institution as soon as details are final. The site is structured for quick edits without breaking design.</p>
@@ -326,7 +322,7 @@
               <div class="media" aria-hidden="true"></div>
               <div class="card-inner">
                 <div class="card-kicker">City</div>
-                <h3 class="card-title">[UPDATE: City, Country]</h3>
+                <h3 class="card-title" data-bind-text="summit.city">India</h3>
                 <p>Accessible, connected, and built for high-intensity institutional events.</p>
               </div>
             </article>
@@ -334,7 +330,7 @@
               <div class="media" aria-hidden="true"></div>
               <div class="card-inner">
                 <div class="card-kicker">Host institution</div>
-                <h3 class="card-title">[UPDATE: Host institution]</h3>
+                <h3 class="card-title" data-bind-text="summit.hostInstitution">Host institution announcement soon</h3>
                 <p>Venue discipline, schedule integrity, and institutional credibility.</p>
               </div>
             </article>
@@ -350,7 +346,7 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Registration</div>
             <h2>Registration, built for conversion</h2>
-            <p class="lead">A disciplined process that respects delegates’ time: clear steps, predictable communication, and transparent policy.</p>
+            <p class="lead" data-bind-text="home.registrationLead">Applications, allotments, payment confirmation, and support should all feel simple. This flow is built to reduce uncertainty for delegates and schools.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html#apply">Go to application</a>
               <a class="btn btn-ghost" href="registration.html">Registration details</a>
@@ -392,8 +388,8 @@
             <div class="split">
               <div>
                 <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Final call</div>
-                <h2>Enter the room. Hold the standard.</h2>
-                <p class="lead">If you want visibility, negotiation, and pressure that sharpens you — Arsenic Summit is built for you. Register, prepare, and show up ready.</p>
+                <h2 data-bind-text="home.finalCtaTitle">Enter the room. Hold the standard.</h2>
+                <p class="lead" data-bind-text="home.finalCtaLead">If you want visibility, negotiation, and pressure that sharpens you, Arsenic Summit is built for you.</p>
               </div>
               <div class="stack-lg">
                 <a class="btn btn-primary" href="registration.html">Register</a>
@@ -418,7 +414,7 @@
                 <span class="slogan">Where Diplomacy Meets Democracy</span>
               </span>
             </a>
-            <p class="mt-18">A premium summit for ambitious young leaders — serious committees, disciplined communication, and outcomes that can be defended.</p>
+            <p class="mt-18">A premium summit for ambitious young leaders - serious committees, disciplined communication, and outcomes that can be defended.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html">Register</a>
               <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -435,29 +431,39 @@
 
           <div>
             <h3>Social</h3>
-            <a href="[UPDATE: Instagram URL]">Instagram</a>
-            <a href="[UPDATE: LinkedIn URL]">LinkedIn</a>
+            <a data-bind-href="social.instagram" href="#">Instagram</a>
+            <a data-bind-href="social.linkedin" href="#">LinkedIn</a>
             <a href="partners.html">Partners</a>
           </div>
 
           <div>
             <h3>Contact</h3>
-            <a href="mailto:[UPDATE: Official email]">[UPDATE: Official email]</a>
+            <a data-bind-href="contact.officialEmailHref" data-bind-text="contact.officialEmail" href="mailto:hello@arsenicsummit.org">hello@arsenicsummit.org</a>
             <a href="contact.html">Contact lanes</a>
             <a href="registration.html">Registration help</a>
-            <div class="mt-18 muted">Venue: [UPDATE: Venue address]</div>
+            <div class="mt-18 muted">Venue: <span data-bind-text="summit.venueAddress">Venue details will be published after final confirmation.</span></div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <div>© <span data-year></span> Arsenic Summit. All rights reserved.</div>
-          <div><a href="policies.html">Policies</a></div>
+          <div>&copy; <span data-year></span> Arsenic Summit. All rights reserved.</div>
+          <div class="footer-meta-links"><a href="policies.html">Policies</a><a class="admin-access-link" href="admin-access.html">Admin Access</a></div>
         </div>
       </div>
     </footer>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/site-data.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 

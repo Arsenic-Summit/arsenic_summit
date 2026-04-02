@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="About Arsenic Summit — an institutional, premium delegate experience where diplomacy meets democracy." />
-  <title>About — Arsenic Summit</title>
+  <meta name="description" content="About Arsenic Summit - an institutional, premium delegate experience where diplomacy meets democracy." />
+  <title>About - Arsenic Summit</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +68,7 @@
             <span class="slogan">2026 Edition</span>
           </span>
         </a>
-        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">✕</button>
+        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">X</button>
       </div>
 
       <div class="mobile-nav" aria-label="Mobile navigation">
@@ -104,7 +104,7 @@
         <div class="reveal">
           <div class="eyebrow"><span class="rule" aria-hidden="true"></span>About</div>
           <h1>Built for the delegates who want the room to matter.</h1>
-          <p class="lead">Arsenic Summit is not a theme. It’s a standard: pressure-tested diplomacy, disciplined communication, and visibility earned through substance.</p>
+          <p class="lead">Arsenic Summit is not a theme. It's a standard: pressure-tested diplomacy, disciplined communication, and visibility earned through substance.</p>
           <div class="crumbs">
             <a href="index.html">Home</a>
             <span class="muted">/</span>
@@ -126,7 +126,7 @@
             </p>
             <div class="callout mt-26">
               <div class="title">The one idea we never compromise</div>
-              <p style="margin:10px 0 0 0;">Delegates should feel pressure, responsibility, and visibility — from the first announcement to the final outcome publication.</p>
+              <p style="margin:10px 0 0 0;">Delegates should feel pressure, responsibility, and visibility - from the first announcement to the final outcome publication.</p>
             </div>
           </div>
           <div class="grid grid-2">
@@ -141,7 +141,7 @@
               <div class="card-inner">
                 <div class="card-kicker">Promise</div>
                 <h3 class="card-title">Seriousness</h3>
-                <p>Rooms built for outcomes: procedure that matters, drafting that holds, debate that doesn’t drift.</p>
+                <p>Rooms built for outcomes: procedure that matters, drafting that holds, debate that doesn't drift.</p>
               </div>
             </article>
             <article class="card reveal">
@@ -155,7 +155,7 @@
               <div class="card-inner">
                 <div class="card-kicker">Promise</div>
                 <h3 class="card-title">Visibility</h3>
-                <p>Earned, not manufactured — through IP, outcomes, and how you carry your diplomacy in the room.</p>
+                <p>Earned, not manufactured - through IP, outcomes, and how you carry your diplomacy in the room.</p>
               </div>
             </article>
           </div>
@@ -169,14 +169,14 @@
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>How we run</div>
             <h2>Operational discipline</h2>
-            <p class="lead">A premium summit is a chain of small promises kept: clean schedules, consistent updates, respectful lanes, and an on-ground flow that doesn’t improvise.</p>
+            <p class="lead">A premium summit is a chain of small promises kept: clean schedules, consistent updates, respectful lanes, and an on-ground flow that doesn't improvise.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html">Register</a>
               <a class="btn btn-ghost" href="policies.html">Read policies</a>
             </div>
           </div>
           <div class="grid grid-3">
-            <article class="card reveal"><div class="card-inner"><h3 class="card-title">Committees</h3><p>Clear agendas, defined formats, and EB expectations that are published — not guessed.</p></div></article>
+            <article class="card reveal"><div class="card-inner"><h3 class="card-title">Committees</h3><p>Clear agendas, defined formats, and EB expectations that are published - not guessed.</p></div></article>
             <article class="card reveal"><div class="card-inner"><h3 class="card-title">Communication</h3><p>Announcement bar updates, email-first lanes, and a public agenda that stays current.</p></div></article>
             <article class="card reveal"><div class="card-inner"><h3 class="card-title">Experience</h3><p>Design and motion that feel editorial: restrained, cinematic, and institutional.</p></div></article>
           </div>
@@ -195,7 +195,7 @@
                 <span class="slogan">Where Diplomacy Meets Democracy</span>
               </span>
             </a>
-            <p class="mt-18">A premium summit for ambitious young leaders — serious committees, disciplined communication, and outcomes that can be defended.</p>
+            <p class="mt-18">A premium summit for ambitious young leaders - serious committees, disciplined communication, and outcomes that can be defended.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html">Register</a>
               <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -212,29 +212,38 @@
 
           <div>
             <h3>Social</h3>
-            <a href="[UPDATE: Instagram URL]">Instagram</a>
-            <a href="[UPDATE: LinkedIn URL]">LinkedIn</a>
+            <a data-bind-href="social.instagram" href="#">Instagram</a>
+            <a data-bind-href="social.linkedin" href="#">LinkedIn</a>
             <a href="partners.html">Partners</a>
           </div>
 
           <div>
             <h3>Contact</h3>
-            <a href="mailto:[UPDATE: Official email]">[UPDATE: Official email]</a>
+            <a data-bind-href="contact.officialEmailHref" data-bind-text="contact.officialEmail" href="mailto:hello@arsenicsummit.org">hello@arsenicsummit.org</a>
             <a href="contact.html">Contact lanes</a>
             <a href="registration.html">Registration help</a>
-            <div class="mt-18 muted">Venue: [UPDATE: Venue address]</div>
+            <div class="mt-18 muted">Venue: <span data-bind-text="summit.venueAddress">Venue details will be published after final confirmation.</span></div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <div>© <span data-year></span> Arsenic Summit. All rights reserved.</div>
-          <div><a href="policies.html">Policies</a></div>
+          <div>&copy; <span data-year></span> Arsenic Summit. All rights reserved.</div>
+          <div class="footer-meta-links"><a href="policies.html">Policies</a><a class="admin-access-link" href="admin-access.html">Admin Access</a></div>
         </div>
       </div>
     </footer>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/site-data.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
 

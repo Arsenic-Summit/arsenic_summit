@@ -1,4 +1,4 @@
-/* Arsenic Summit — main.js (vanilla JS, static deploy)
+﻿/* Arsenic Summit - main.js (vanilla JS, static deploy)
    Edit the data arrays below to update content across pages.
    No backend, no storage, no build step.
 */
@@ -20,11 +20,11 @@ const ANNOUNCEMENTS = [
 // Editable committee highlights (Home "Committees preview")
 const FEATURED_COMMITTEES = [
   {
-    name: "UNSC — Closed-Door Crisis",
+    name: "UNSC - Closed-Door Crisis",
     agendaLine: "A rapidly escalating maritime confrontation with global supply chains at stake.",
     difficulty: "Advanced",
     type: "Crisis",
-    mood: "Fast, consequential, unforgiving — precision over speeches."
+    mood: "Fast, consequential, unforgiving - precision over speeches."
   },
   {
     name: "UNHRC",
@@ -36,7 +36,7 @@ const FEATURED_COMMITTEES = [
   {
     name: "DISEC",
     agendaLine: "Non-state procurement networks and the next generation of deterrence.",
-    difficulty: "Beginner–Intermediate",
+    difficulty: "Beginner-Intermediate",
     type: "GA / Disarmament",
     mood: "Structure, substance, coalition building."
   },
@@ -49,7 +49,7 @@ const FEATURED_COMMITTEES = [
   },
   {
     name: "International Press",
-    agendaLine: "The summit’s most visible arena: credibility, verification, and storycraft.",
+    agendaLine: "The summit's most visible arena: credibility, verification, and storycraft.",
     difficulty: "Open",
     type: "Press Corps",
     mood: "Editorial restraint; impact through accuracy and timing."
@@ -61,7 +61,7 @@ const FEATURED_COMMITTEES = [
 const COMMITTEES = [
   {
     id: "unsc-crisis",
-    name: "United Nations Security Council — Closed-Door Crisis",
+    name: "United Nations Security Council - Closed-Door Crisis",
     category: "International Security",
     theme: "Security",
     experience: "Advanced",
@@ -69,7 +69,7 @@ const COMMITTEES = [
     format: "Crisis",
     agenda: "Maritime escalation, sanctions architecture, and a cascading supply-chain shock.",
     description:
-      "A closed-door crisis simulation where minutes matter. Delegates will navigate intelligence fragments, draft binding action, manage alliance fractures, and handle public fallout — all while the room demands decisions, not declarations.",
+      "A closed-door crisis simulation where minutes matter. Delegates will navigate intelligence fragments, draft binding action, manage alliance fractures, and handle public fallout - all while the room demands decisions, not declarations.",
     eb: ["Chair: [UPDATE: Name]", "Crisis Director: [UPDATE: Name]"],
     profile: "For delegates who thrive under time pressure, can write clean directives, and negotiate with minimal oxygen.",
     applyText: "Apply via Registration"
@@ -94,8 +94,8 @@ const COMMITTEES = [
     name: "Disarmament & International Security Committee (DISEC)",
     category: "International Security",
     theme: "Security",
-    experience: "Beginner–Intermediate",
-    difficulty: "Beginner–Intermediate",
+    experience: "Beginner-Intermediate",
+    difficulty: "Beginner-Intermediate",
     format: "GA",
     agenda: "Illicit procurement networks, dual-use technology, and deterrence credibility.",
     description:
@@ -144,7 +144,7 @@ const COMMITTEES = [
     format: "Press Corps",
     agenda: "Verification, editorial judgment, and live coverage under institutional constraints.",
     description:
-      "The summit’s visibility engine. Press delegates will file breaking updates, features, and interviews while maintaining credibility. Accuracy, sourcing, and timing decide influence.",
+      "The summit's visibility engine. Press delegates will file breaking updates, features, and interviews while maintaining credibility. Accuracy, sourcing, and timing decide influence.",
     eb: ["Editor-in-Chief: [UPDATE: Name]", "Managing Editor: [UPDATE: Name]"],
     profile: "For writers and researchers who can move fast without cutting corners.",
     applyText: "Apply via Registration"
@@ -158,9 +158,9 @@ const SECRETARIAT = [
     role: "Secretary-General",
     specialty: "Institutional discipline & delegate experience",
     vision:
-      "Arsenic Summit is built for delegates who want more than attendance — those who want visibility, pressure-tested skill, and a room that respects seriousness.",
+      "Arsenic Summit is built for delegates who want more than attendance - those who want visibility, pressure-tested skill, and a room that respects seriousness.",
     bio:
-      "Leads summit direction, standards, and communication clarity. Focused on building an editorial, premium delegate journey — from application to outcomes.",
+      "Leads summit direction, standards, and communication clarity. Focused on building an editorial, premium delegate journey - from application to outcomes.",
     photoAlt: "Arsenic Summit secretariat portrait placeholder",
     social: { label: "LinkedIn", href: "[UPDATE: LinkedIn URL]" }
   },
@@ -180,7 +180,7 @@ const SECRETARIAT = [
     role: "Head of Delegate Affairs",
     specialty: "Allotments, support, and fairness",
     vision:
-      "Allotment is not a lottery — it’s a matching process grounded in fit, readiness, and room balance.",
+      "Allotment is not a lottery - it's a matching process grounded in fit, readiness, and room balance.",
     bio:
       "Handles allotment logic, helpdesk standards, and delegate communications. Prioritizes clarity, timelines, and respectful resolution.",
     photoAlt: "Arsenic Summit secretariat portrait placeholder",
@@ -193,7 +193,7 @@ const SECRETARIAT = [
     vision:
       "Partners must elevate standards, not dilute them. We collaborate only where values and quality match.",
     bio:
-      "Coordinates partner categories, deliverables, and public acknowledgements. Ensures alignment with the summit’s editorial tone.",
+      "Coordinates partner categories, deliverables, and public acknowledgements. Ensures alignment with the summit's editorial tone.",
     photoAlt: "Arsenic Summit secretariat portrait placeholder",
     social: { label: "LinkedIn", href: "[UPDATE: LinkedIn URL]" }
   }
@@ -203,11 +203,11 @@ const SECRETARIAT = [
 const FAQ = [
   {
     q: "Who can apply?",
-    a: "Arsenic Summit is open to school and college delegates. If your institution is registering a delegation, use the delegation track on the registration page. If you’re applying solo, use the individual track."
+    a: "Arsenic Summit is open to school and college delegates. If your institution is registering a delegation, use the delegation track on the registration page. If you're applying solo, use the individual track."
   },
   {
     q: "Do I need prior MUN experience?",
-    a: "No — but you do need readiness. We run serious rooms. Beginners are welcome in structured committees, and we publish preparation resources to close the gap."
+    a: "No - but you do need readiness. We run serious rooms. Beginners are welcome in structured committees, and we publish preparation resources to close the gap."
   },
   {
     q: "How are committees allotted?",
@@ -235,7 +235,7 @@ const FAQ = [
   },
   {
     q: "How are awards decided?",
-    a: "Awards are decided by Executive Boards based on consistency, diplomacy, negotiation quality, research, documentation, and outcomes — not volume or theatrics."
+    a: "Awards are decided by Executive Boards based on consistency, diplomacy, negotiation quality, research, documentation, and outcomes - not volume or theatrics."
   },
   {
     q: "Who do I contact for urgent help?",
@@ -249,47 +249,47 @@ const AGENDA = [
     title: "Pre-conference",
     badge: "Timeline",
     items: [
-      { time: "T–30 to T–20", title: "Registrations open", note: "Individual & delegation applications accepted." },
-      { time: "T–18", title: "Committee reveals", note: "Featured committees + agenda lines published." },
-      { time: "T–14", title: "Background guides released (Wave 1)", note: "Core committee packs go live." },
-      { time: "T–10 to T–7", title: "Allotment review window", note: "Applications assessed; preference-fit evaluated." },
-      { time: "T–6", title: "Allotments out", note: "Allotment emails sent in batches." },
-      { time: "T–5 to T–3", title: "Payment & confirmation", note: "Seat confirmation + logistics details." },
-      { time: "T–2", title: "Orientation / briefing", note: "Online briefing: rules, writing, expectations." }
+      { time: "T-30 to T-20", title: "Registrations open", note: "Individual & delegation applications accepted." },
+      { time: "T-18", title: "Committee reveals", note: "Featured committees + agenda lines published." },
+      { time: "T-14", title: "Background guides released (Wave 1)", note: "Core committee packs go live." },
+      { time: "T-10 to T-7", title: "Allotment review window", note: "Applications assessed; preference-fit evaluated." },
+      { time: "T-6", title: "Allotments out", note: "Allotment emails sent in batches." },
+      { time: "T-5 to T-3", title: "Payment & confirmation", note: "Seat confirmation + logistics details." },
+      { time: "T-2", title: "Orientation / briefing", note: "Online briefing: rules, writing, expectations." }
     ]
   },
   {
     title: "Conference Day 1",
     badge: "On-ground",
     items: [
-      { time: "08:00–09:30", title: "Check-in & verification", note: "Badges, kits, venue navigation." },
-      { time: "10:00–11:15", title: "Opening ceremony", note: "[UPDATE: Host institution welcome + summit briefing]" },
-      { time: "11:30–13:30", title: "Committee Session I", note: "Agenda adoption, roll call, framework." },
-      { time: "13:30–14:30", title: "Lunch", note: "Venue dining window." },
-      { time: "14:45–17:15", title: "Committee Session II", note: "Caucus cycles; bloc formation." },
-      { time: "17:30–18:15", title: "Press & networking window", note: "Interviews, coverage, coordination." }
+      { time: "08:00-09:30", title: "Check-in & verification", note: "Badges, kits, venue navigation." },
+      { time: "10:00-11:15", title: "Opening ceremony", note: "[UPDATE: Host institution welcome + summit briefing]" },
+      { time: "11:30-13:30", title: "Committee Session I", note: "Agenda adoption, roll call, framework." },
+      { time: "13:30-14:30", title: "Lunch", note: "Venue dining window." },
+      { time: "14:45-17:15", title: "Committee Session II", note: "Caucus cycles; bloc formation." },
+      { time: "17:30-18:15", title: "Press & networking window", note: "Interviews, coverage, coordination." }
     ]
   },
   {
     title: "Conference Day 2",
     badge: "Intensity",
     items: [
-      { time: "09:30–12:30", title: "Committee Session III", note: "Drafting + negotiation under pressure." },
-      { time: "12:30–13:30", title: "Lunch", note: "Venue dining window." },
-      { time: "13:45–16:30", title: "Committee Session IV", note: "Amendments; voting strategy." },
-      { time: "16:45–17:45", title: "Crisis rounds / Press surge", note: "For crisis + IP: acceleration window." },
-      { time: "18:15–19:15", title: "Socials / Delegation meet", note: "Structured networking with safeguards." }
+      { time: "09:30-12:30", title: "Committee Session III", note: "Drafting + negotiation under pressure." },
+      { time: "12:30-13:30", title: "Lunch", note: "Venue dining window." },
+      { time: "13:45-16:30", title: "Committee Session IV", note: "Amendments; voting strategy." },
+      { time: "16:45-17:45", title: "Crisis rounds / Press surge", note: "For crisis + IP: acceleration window." },
+      { time: "18:15-19:15", title: "Socials / Delegation meet", note: "Structured networking with safeguards." }
     ]
   },
   {
     title: "Conference Day 3",
     badge: "Outcomes",
     items: [
-      { time: "09:30–12:00", title: "Committee Session V", note: "Final drafts; closing statements." },
-      { time: "12:00–13:00", title: "Lunch", note: "Venue dining window." },
-      { time: "13:15–15:15", title: "Voting procedure", note: "Adoption of resolutions / directives." },
-      { time: "15:30–16:30", title: "Awards & closing ceremony", note: "Recognition + institutional close." },
-      { time: "16:45–17:30", title: "Departure window", note: "Certificates, exits, final helpdesk." }
+      { time: "09:30-12:00", title: "Committee Session V", note: "Final drafts; closing statements." },
+      { time: "12:00-13:00", title: "Lunch", note: "Venue dining window." },
+      { time: "13:15-15:15", title: "Voting procedure", note: "Adoption of resolutions / directives." },
+      { time: "15:30-16:30", title: "Awards & closing ceremony", note: "Recognition + institutional close." },
+      { time: "16:45-17:30", title: "Departure window", note: "Certificates, exits, final helpdesk." }
     ]
   },
   {
@@ -453,7 +453,7 @@ function renderAnnouncements(){
     return `
       <div class="ticker-item">
         <span class="tag">${escapeHtml(item.label)}</span>
-        <span><strong>${escapeHtml(item.label)}</strong> — ${escapeHtml(item.detail)}</span>
+        <span><strong>${escapeHtml(item.label)}</strong> - ${escapeHtml(item.detail)}</span>
         <span class="${toneClass}" style="margin-left:6px;">${escapeHtml(item.tone || "update")}</span>
       </div>
     `;
@@ -469,7 +469,7 @@ function renderFeaturedCommittees(){
       <div class="card-inner">
         <div class="top">
           <div>
-            <div class="card-kicker">${escapeHtml(c.type)} • ${escapeHtml(c.difficulty)}</div>
+            <div class="card-kicker">${escapeHtml(c.type)} â€¢ ${escapeHtml(c.difficulty)}</div>
             <div class="title card-title">${escapeHtml(c.name)}</div>
           </div>
           <span class="badge ${c.difficulty.toLowerCase().includes("advanced") ? "risk" : c.difficulty.toLowerCase().includes("beginner") ? "good" : "warn"}">
@@ -516,7 +516,7 @@ function renderFaqPreview(){
       <summary>
         <button type="button" aria-label="Toggle answer">
           <span class="q">${escapeHtml(item.q)}</span>
-          <span class="chev" aria-hidden="true">⌄</span>
+          <span class="chev" aria-hidden="true">+</span>
         </button>
       </summary>
       <div class="a">${escapeHtml(item.a)}</div>
@@ -546,7 +546,7 @@ function scheduleBlockHtml(block){
       <ul class="schedule-list">
         ${(block.items || []).slice(0, 6).map(it => `
           <li class="schedule-item">
-            <div class="time">${escapeHtml(it.time || "—")}</div>
+            <div class="time">${escapeHtml(it.time || "-")}</div>
             <div class="desc">
               <strong>${escapeHtml(it.title || "")}</strong>
               <small>${escapeHtml(it.note || "")}</small>
@@ -617,7 +617,7 @@ function renderCommitteesPage(){
         <div class="card-inner">
           <div class="top">
             <div>
-              <div class="card-kicker">${escapeHtml(c.category)} • ${escapeHtml(c.format)}</div>
+              <div class="card-kicker">${escapeHtml(c.category)} â€¢ ${escapeHtml(c.format)}</div>
               <div class="title card-title">${escapeHtml(c.name)}</div>
             </div>
             <span class="badge ${c.difficulty.toLowerCase().includes("advanced") ? "risk" : c.difficulty.toLowerCase().includes("beginner") ? "good" : "warn"}">
@@ -767,7 +767,7 @@ function renderFaqPage(){
       <summary>
         <button type="button" aria-label="Toggle answer">
           <span class="q">${escapeHtml(item.q)}</span>
-          <span class="chev" aria-hidden="true">⌄</span>
+          <span class="chev" aria-hidden="true">+</span>
         </button>
       </summary>
       <div class="a">${escapeHtml(item.a)}</div>
@@ -787,8 +787,8 @@ function setupContactForm(){
     const email = $("#cEmail")?.value?.trim() || "";
     const lane = $("#cLane")?.value || "General queries";
     const message = $("#cMessage")?.value?.trim() || "";
-    const subject = `Arsenic Summit — ${lane} — ${name || "Message"}`;
-    const body = `Name: ${name}\nEmail: ${email}\nLane: ${lane}\n\nMessage:\n${message}\n\n— Sent from arsenicsummit.org static site`;
+    const subject = `Arsenic Summit - ${lane} - ${name || "Message"}`;
+    const body = `Name: ${name}\nEmail: ${email}\nLane: ${lane}\n\nMessage:\n${message}\n\n- Sent from arsenicsummit.org static site`;
     const to = "hello@arsenicsummit.org";
     location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
@@ -827,4 +827,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Reveal last so dynamically injected nodes are observed.
   setupReveal();
 });
+
 

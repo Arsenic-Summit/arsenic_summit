@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Committees at Arsenic Summit 2026 — premium, structured rooms with clear agendas, formats, and standards." />
-  <title>Committees — Arsenic Summit</title>
+  <meta name="description" content="Committees at Arsenic Summit 2026 - premium, structured rooms with clear agendas, formats, and standards." />
+  <title>Committees - Arsenic Summit</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +68,7 @@
             <span class="slogan">2026 Edition</span>
           </span>
         </a>
-        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">✕</button>
+        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">X</button>
       </div>
 
       <div class="mobile-nav" aria-label="Mobile navigation">
@@ -104,7 +104,7 @@
         <div class="reveal">
           <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Committees</div>
           <h1>Choose the room that will sharpen you.</h1>
-          <p class="lead">Each committee has a format, a standard, and a cost. Filter by difficulty, theme, experience level, and format — then apply.</p>
+          <p class="lead">Each committee has a format, a standard, and a cost. Filter by difficulty, theme, experience level, and format - then apply.</p>
           <div class="crumbs">
             <a href="index.html">Home</a>
             <span class="muted">/</span>
@@ -120,11 +120,11 @@
           <div class="split">
             <div>
               <h2>Filters</h2>
-              <p class="lead">A premium room is defined by fit. Pick your parameters; we’ll show committees that match.</p>
+              <p class="lead">A premium room is defined by fit. Pick your parameters; we'll show committees that match.</p>
             </div>
             <div class="callout">
               <div class="title">Results</div>
-              <p style="margin:10px 0 0 0;">Showing <strong id="committeeCount">0</strong> committees. All content is editable in <span class="muted">`js/main.js`</span>.</p>
+              <p style="margin:10px 0 0 0;">Showing <strong id="committeeCount">0</strong> committees. All content is managed from the admin workflow or your content feed.</p>
             </div>
           </div>
 
@@ -191,7 +191,7 @@
                 <span class="slogan">Where Diplomacy Meets Democracy</span>
               </span>
             </a>
-            <p class="mt-18">A premium summit for ambitious young leaders — serious committees, disciplined communication, and outcomes that can be defended.</p>
+            <p class="mt-18">A premium summit for ambitious young leaders - serious committees, disciplined communication, and outcomes that can be defended.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html">Register</a>
               <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -208,29 +208,39 @@
 
           <div>
             <h3>Social</h3>
-            <a href="[UPDATE: Instagram URL]">Instagram</a>
-            <a href="[UPDATE: LinkedIn URL]">LinkedIn</a>
+            <a data-bind-href="social.instagram" href="#">Instagram</a>
+            <a data-bind-href="social.linkedin" href="#">LinkedIn</a>
             <a href="partners.html">Partners</a>
           </div>
 
           <div>
             <h3>Contact</h3>
-            <a href="mailto:[UPDATE: Official email]">[UPDATE: Official email]</a>
+            <a data-bind-href="contact.officialEmailHref" data-bind-text="contact.officialEmail" href="mailto:hello@arsenicsummit.org">hello@arsenicsummit.org</a>
             <a href="contact.html">Contact lanes</a>
             <a href="registration.html">Registration help</a>
-            <div class="mt-18 muted">Venue: [UPDATE: Venue address]</div>
+            <div class="mt-18 muted">Venue: <span data-bind-text="summit.venueAddress">Venue details will be published after final confirmation.</span></div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <div>© <span data-year></span> Arsenic Summit. All rights reserved.</div>
-          <div><a href="policies.html">Policies</a></div>
+          <div>&copy; <span data-year></span> Arsenic Summit. All rights reserved.</div>
+          <div class="footer-meta-links"><a href="policies.html">Policies</a><a class="admin-access-link" href="admin-access.html">Admin Access</a></div>
         </div>
       </div>
     </footer>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/site-data.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 

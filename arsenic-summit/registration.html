@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Registration — apply for Arsenic Summit 2026. Clear steps, policies, and support lanes." />
-  <title>Registration — Arsenic Summit</title>
+  <meta name="description" content="Registration - apply for Arsenic Summit 2026. Clear steps, policies, and support lanes." />
+  <title>Registration - Arsenic Summit</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +68,7 @@
             <span class="slogan">2026 Edition</span>
           </span>
         </a>
-        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">✕</button>
+        <button id="closeMenuBtn" class="close-btn" type="button" aria-label="Close menu">X</button>
       </div>
 
       <div class="mobile-nav" aria-label="Mobile navigation">
@@ -104,7 +104,7 @@
         <div class="reveal">
           <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Registration</div>
           <h1>Apply with intent. Confirm with clarity.</h1>
-          <p class="lead">A conversion-focused page with everything delegates need: eligibility, status, deadlines, fees, and support lanes.</p>
+          <p class="lead">Apply through the website, fill the right Google Form, and keep everything from allotments to payment in one clear flow.</p>
           <div class="crumbs">
             <a href="index.html">Home</a>
             <span class="muted">/</span>
@@ -126,7 +126,7 @@
                 <div class="card-inner">
                   <div class="card-kicker">Track</div>
                   <h3 class="card-title">Individual</h3>
-                  <p>Apply as a solo delegate. Choose committee preferences and your experience level. We’ll allocate based on fit and room balance.</p>
+                  <p>Apply as a solo delegate. Choose committee preferences and your experience level. We'll allocate based on fit and room balance.</p>
                 </div>
               </article>
               <article class="card reveal">
@@ -142,17 +142,17 @@
           <div class="reveal">
             <div class="callout">
               <div class="title">Current status</div>
-              <p style="margin:10px 0 0 0;"><strong>Registrations:</strong> [UPDATE: Open / Closed]</p>
-              <p style="margin:6px 0 0 0;"><strong>Deadline:</strong> [UPDATE: Registration deadline]</p>
-              <p style="margin:6px 0 0 0;"><strong>Allotments:</strong> [UPDATE: Allotment timeline]</p>
-              <p style="margin:6px 0 0 0;"><strong>Help:</strong> <a href="mailto:[UPDATE: Registrations email]">[UPDATE: Registrations email]</a></p>
+              <p style="margin:10px 0 0 0;"><strong>Registrations:</strong> <span data-bind-text="summit.registrationStatus">Applications Open</span></p>
+              <p style="margin:6px 0 0 0;"><strong>Deadline:</strong> <span data-bind-text="registration.deadline">Priority applications accepted now</span></p>
+              <p style="margin:6px 0 0 0;"><strong>Allotments:</strong> <span data-bind-text="registration.allotments">Allotments are released in review batches</span></p>
+              <p style="margin:6px 0 0 0;"><strong>Help:</strong> <a data-bind-href="contact.registrationsEmailHref" data-bind-text="contact.registrationsEmail" href="mailto:registrations@arsenicsummit.org">registrations@arsenicsummit.org</a></p>
             </div>
 
             <div class="card mt-26 reveal">
               <div class="card-inner">
                 <div class="card-kicker">Fees</div>
                 <h3 class="card-title">Conference fee</h3>
-                <p><strong>[UPDATE: Delegate fee]</strong> — includes delegate kit, venue access, and committee participation. Travel and accommodation (if any) are separate unless explicitly stated.</p>
+                <p><strong data-bind-text="registration.fee">Fee announcement in progress</strong> - includes delegate kit, venue access, and committee participation. Travel and accommodation remain separate unless explicitly stated.</p>
                 <div class="hero-actions mt-18">
                   <a class="btn btn-primary" href="#apply">Open application</a>
                   <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -169,49 +169,7 @@
         <div class="split">
           <div class="reveal">
             <div class="eyebrow"><span class="rule" aria-hidden="true"></span>Application</div>
-            <h2>Access the form</h2>
-            <p class="lead">This website is static. Add your real form link here and keep it consistent across announcements and contact lanes.</p>
-            <div class="hero-actions mt-18">
-              <a class="btn btn-primary" href="[UPDATE: Registration form link]" aria-label="Registration form link">Open Registration Form</a>
-              <a class="btn btn-ghost" href="committees.html">See committees</a>
-            </div>
-            <div class="ruleline"></div>
-            <p class="muted">Editable field: <strong>[UPDATE: Registration form link]</strong></p>
-          </div>
-
-          <div class="grid grid-2">
-            <article class="card reveal">
-              <div class="card-inner">
-                <div class="card-kicker">Step 1</div>
-                <h3 class="card-title">Submit application</h3>
-                <p>Fill preferences, experience, and delegate details. Write clearly. Avoid exaggeration.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card-inner">
-                <div class="card-kicker">Step 2</div>
-                <h3 class="card-title">Receive review/allotment</h3>
-                <p>We assess preference-fit and room balance. Allotment emails are sent in batches.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card-inner">
-                <div class="card-kicker">Step 3</div>
-                <h3 class="card-title">Confirm participation</h3>
-                <p>Pay the fee within the confirmation window. Seat is secured only after confirmation.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card-inner">
-                <div class="card-kicker">Step 4</div>
-                <h3 class="card-title">Attend the summit</h3>
-                <p>Arrive prepared. Deliver outcomes. Leave with credibility and documentation.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2>Register through Google Forms</h2><p class="lead">Use the individual or delegation form directly inside the website. Once your team adds the real Google links, this section updates automatically and stays easier to manage.</p><div class="callout mt-18"><div class="title">Submission workflow</div><p style="margin:10px 0 0 0;">Google Forms collects the submission. Automatic emails are handled on the Google side through Apps Script or Google Form settings, which is the right setup for a static website.</p></div></div><div class="reveal"><div id="registrationForms" class="registration-forms" aria-label="Registration forms"></div></div></div></div></section>
 
     <section class="section surface-paper">
       <div class="container">
@@ -267,8 +225,8 @@
             <p class="lead">Scan the QR, complete the payment, and keep proof ready for verification. This section is designed to be clear, minimal, and audit-friendly.</p>
             <div class="callout mt-18">
               <div class="title">Editable payment fields</div>
-              <p style="margin:10px 0 0 0;"><strong>Instructions:</strong> [UPDATE: Payment instructions]</p>
-              <p style="margin:6px 0 0 0;"><strong>Payment issues:</strong> <a href="mailto:[UPDATE: Payments email]">[UPDATE: Payments email]</a></p>
+              <p style="margin:10px 0 0 0;"><strong>Instructions:</strong> <span data-bind-text="registration.paymentInstructions">Pay only after you receive your allotment or official payment confirmation message.</span></p>
+              <p style="margin:6px 0 0 0;"><strong>Payment issues:</strong> <a data-bind-href="registration.paymentsEmailHref" data-bind-text="registration.paymentsEmail" href="mailto:payments@arsenicsummit.org">payments@arsenicsummit.org</a></p>
             </div>
           </div>
 
@@ -278,7 +236,7 @@
                 <div class="top">
                   <div>
                     <div class="card-kicker">Scan to pay</div>
-                    <h3 class="card-title">[UPDATE: Payee name / UPI ID]</h3>
+                    <h3 class="card-title" data-bind-text="registration.payeeName">Arsenic Summit Payments</h3>
                   </div>
                   <span class="badge warn">Verification required</span>
                 </div>
@@ -312,7 +270,7 @@
                 <span class="slogan">Where Diplomacy Meets Democracy</span>
               </span>
             </a>
-            <p class="mt-18">A premium summit for ambitious young leaders — serious committees, disciplined communication, and outcomes that can be defended.</p>
+            <p class="mt-18">A premium summit for ambitious young leaders - serious committees, disciplined communication, and outcomes that can be defended.</p>
             <div class="hero-actions mt-18">
               <a class="btn btn-primary" href="registration.html#apply">Register</a>
               <a class="btn btn-ghost" href="policies.html">Policies</a>
@@ -329,29 +287,39 @@
 
           <div>
             <h3>Social</h3>
-            <a href="[UPDATE: Instagram URL]">Instagram</a>
-            <a href="[UPDATE: LinkedIn URL]">LinkedIn</a>
+            <a data-bind-href="social.instagram" href="#">Instagram</a>
+            <a data-bind-href="social.linkedin" href="#">LinkedIn</a>
             <a href="partners.html">Partners</a>
           </div>
 
           <div>
             <h3>Contact</h3>
-            <a href="mailto:[UPDATE: Official email]">[UPDATE: Official email]</a>
+            <a data-bind-href="contact.officialEmailHref" data-bind-text="contact.officialEmail" href="mailto:hello@arsenicsummit.org">hello@arsenicsummit.org</a>
             <a href="contact.html">Contact lanes</a>
             <a href="faq.html">FAQ</a>
-            <div class="mt-18 muted">Venue: [UPDATE: Venue address]</div>
+            <div class="mt-18 muted">Venue: <span data-bind-text="summit.venueAddress">Venue details will be published after final confirmation.</span></div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <div>© <span data-year></span> Arsenic Summit. All rights reserved.</div>
-          <div><a href="policies.html">Policies</a></div>
+          <div>&copy; <span data-year></span> Arsenic Summit. All rights reserved.</div>
+          <div class="footer-meta-links"><a href="policies.html">Policies</a><a class="admin-access-link" href="admin-access.html">Admin Access</a></div>
         </div>
       </div>
     </footer>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/site-data.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
